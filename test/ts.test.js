@@ -98,11 +98,8 @@ describe('ts', function () {
     describe('.isVoid()', function () {
         it('returns false', function () {
             assert(ts.isVoid(NaN) === false);
-        });
-
-        it('returns true', function () {
-            assert(ts.isVoid(null) === true);
-            assert(ts.isVoid(undefined) === true);
+            assert(ts.isVoid(null) === false);
+            assert(ts.isVoid(undefined) === false);
         });
     });
 
